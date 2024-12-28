@@ -22,7 +22,7 @@ export const TodoList = () => {
 
   }
 
-  const handleDelete = (tareakDeleted) => {
+  const handleDelete = (tareaDeleted) => {
 
     setTodasLasTareas(todasLasTareas.filter((item) => item != tareaDeleted ));
 
@@ -58,7 +58,7 @@ export const TodoList = () => {
           {item}
           <span onClick={() => handleDelete(item)}>
 
-            <i class="fas fa-trash text-danger"></i>
+            <i className="fa fa-remove text-danger"></i>
 
           </span>
 
